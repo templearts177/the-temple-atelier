@@ -3,11 +3,22 @@
 <link rel="stylesheet" href="assets/style.css"></head><body>
 <header class="site-head"><div class="shell nav">
 <a class="brand" href="index.html">The Temple Atelier</a>
-<nav class="navlinks">
-<a  href="artist.html">Artist</a>
-<a  href="works.html">Works</a>
-<a  href="commissions.html">Commissions</a>
-</nav></div></header>
+<button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="atelier-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="menu-layer" id="atelier-menu" aria-hidden="true">
+  <button class="menu-backdrop" type="button" aria-label="Close navigation"></button>
+  <aside class="parchment-menu" role="dialog" aria-modal="true" aria-label="Atelier navigation">
+    <button class="menu-close" type="button" aria-label="Close navigation">×</button>
+    <div class="menu-kicker">The Temple Atelier</div>
+    <nav class="menu-destinations">
+      <a class="current" aria-current="page" href="index.html"><span>01</span>Home</a>
+      <a href="artist.html"><span>02</span>Artist</a>
+      <a href="works.html"><span>03</span>Works</a>
+      <a href="commissions.html"><span>04</span>Commissions</a>
+    </nav>
+    <div class="menu-signoff">Temple Udofia · Nigeria</div>
+  </aside>
+</div>
 
 <main>
 <section class="home-entrance">
@@ -27,12 +38,7 @@
     <p>2025 · Charcoal on paper · 23.6 × 18.1 in · Available</p>
     <p>Emerging from a period of feeling confronted by more than I felt prepared to carry, the work reflects exhaustion, vulnerability and a longing for stillness.</p>
     <a class="text-link" href="works.html">View the work →</a></div>
-  </div>
-  <nav class="home-pathways" aria-label="Explore The Temple Atelier">
-    <a href="artist.html"><span>01</span><strong>Meet the Artist</strong><em>Temple Udofia →</em></a>
-    <a href="works.html"><span>02</span><strong>Explore the Works</strong><em>Selected drawings →</em></a>
-    <a href="commissions.html"><span>03</span><strong>Commission a Portrait</strong><em>Begin a study →</em></a>
-  </nav></div>
+  </div></div>
 </section>
 </main>
 
