@@ -3,11 +3,22 @@
 <link rel="stylesheet" href="assets/style.css"></head><body>
 <header class="site-head"><div class="shell nav">
 <a class="brand" href="index.html">The Temple Atelier</a>
-<nav class="navlinks">
-<a  href="artist.html">Artist</a>
-<a  href="works.html">Works</a>
-<a class="active" href="commissions.html">Commissions</a>
-</nav></div></header>
+<button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="atelier-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="menu-layer" id="atelier-menu" aria-hidden="true">
+  <button class="menu-backdrop" type="button" aria-label="Close navigation"></button>
+  <aside class="parchment-menu" role="dialog" aria-modal="true" aria-label="Atelier navigation">
+    <button class="menu-close" type="button" aria-label="Close navigation">×</button>
+    <div class="menu-kicker">The Temple Atelier</div>
+    <nav class="menu-destinations">
+      <a href="index.html"><span>01</span>Home</a>
+      <a href="artist.html"><span>02</span>Artist</a>
+      <a href="works.html"><span>03</span>Works</a>
+      <a class="current" aria-current="page" href="commissions.html"><span>04</span>Commissions</a>
+    </nav>
+    <div class="menu-signoff">Temple Udofia · Nigeria</div>
+  </aside>
+</div>
 
 <main><section class="page-hero"><div class="shell"><div class="eyebrow">A Study in Likeness</div><h1>Commissions</h1><p>Hand-drawn portrait commissions in charcoal and graphite, offered in three distinct treatments.</p></div></section>
 <section class="section"><div class="shell"><div class="section-head"><div><div class="eyebrow">Choose a treatment</div><h2>Three approaches.</h2></div><p class="small">Each is a complete artistic treatment—not a good/better/best quality ladder.</p></div>
